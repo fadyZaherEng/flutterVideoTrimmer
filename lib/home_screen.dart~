@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_video_trimmer/config/theme/color_schemes.dart';
+import 'package:flutter_video_trimmer/core/resources/image_paths.dart';
+import 'package:flutter_video_trimmer/core/utils/trimmer_utils.dart';
 import 'package:flutter_video_trimmer_test/video_trimmer_screen.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
@@ -36,7 +38,15 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
             //show video player
-            selectedVideo != null ? _videoWidget() : Container(),
+            selectedVideo != null
+                ? SizedBox(
+                    height: 200,
+                    width: 200,
+                    child: VideoPlayer(
+                      videoPlayerController!,
+                    ),
+                  )
+                : Container(),
           ],
         ),
       ),
@@ -107,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
       );
   }
 
-  Widget _videoWidget() {
+  Widget _videoWidget()async {
     return videoPlayerController == null
         ? const SizedBox.shrink()
         : videoPlayerController!.value.isInitialized
@@ -129,12 +139,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: SizedBox(
                             height: 150,
                             child: FutureBuilder<Uint8List?>(
-                              future: VideoThumbnail.thumbnailData(
-                                video: selectedVideo!.path,
-                                imageFormat: ImageFormat.JPEG,
-                                maxWidth: 128,
-                                quality: 100,
-                              ),
+                              future:   VideoThumbnail.thumbnailData(
+                              video: selectedVideo!.path,
+                              imageFormat: ImageFormat.JPEG,
+                              maxWidth: 128,
+                              quality: 100,
+                            ),
                               builder: (BuildContext context,
                                   AsyncSnapshot<Uint8List?> snapshot) {
                                 if (snapshot.connectionState ==
@@ -156,17 +166,20 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                         ),
-                      ],
+                       ],
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
-                    child: Icon(
-                      videoPlayerController!.value.isPlaying
-                          ? Icons.pause
-                          : Icons.play_arrow,
-                      color: ColorSchemes.white,
-                      size: 50,
+                    onTap: () {
+                      _navigateToPlayVideoScreenEvent(
+                          selectedVideo, videoPlayerController!);
+                    },
+                    child: SvgPicture.asset(
+                      fit: BoxFit.scaleDown,
+                      ImagePaths.play,
+                      color: Colors.white,
+                      width: 45,
+                      height: 45,
                     ),
                   ),
                   Positioned.directional(

@@ -25,8 +25,7 @@ class _VideoTrimmerScreenState extends State<VideoTrimmerScreen> {
 
   double _startValue = 0.0;
   double _endValue = 0.0;
-  final double _initialStartValue = 0.0;
-  double _initialEndValue = 0.0;
+   double _initialEndValue = 0.0;
 
   bool _isPlaying = false;
   bool _progressVisibility = false;

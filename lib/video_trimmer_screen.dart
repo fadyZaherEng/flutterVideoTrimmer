@@ -25,7 +25,7 @@ class _VideoTrimmerScreenState extends State<VideoTrimmerScreen> {
 
   double _startValue = 0.0;
   double _endValue = 0.0;
-   double _initialEndValue = 0.0;
+  double _initialEndValue = 0.0;
 
   bool _isPlaying = false;
   bool _progressVisibility = false;
@@ -113,7 +113,10 @@ class _VideoTrimmerScreenState extends State<VideoTrimmerScreen> {
                             borderRadius: BorderRadius.circular(5),
                           ),
                         ),
-                        child: const Text("CANCEL"),
+                        child: const Text(
+                          "CANCEL",
+                          style: TextStyle(color: Colors.white),
+                        ),
                         onPressed: () {
                           Navigator.pop(context);
                         }),
@@ -127,7 +130,10 @@ class _VideoTrimmerScreenState extends State<VideoTrimmerScreen> {
                           borderRadius: BorderRadius.circular(5),
                         ),
                       ),
-                      child: const Text("SAVE"),
+                      child: const Text(
+                        "SAVE",
+                        style: TextStyle(color: Colors.white),
+                      ),
                       onPressed: () async {
                         if (!_progressVisibility) {
                           if (Duration(

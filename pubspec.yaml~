@@ -12,8 +12,10 @@ dependencies:
   cupertino_icons: ^1.0.6
   video_player:
   image_picker:
+  video_thumbnail: ^0.5.3
+  intl: 
   flutter_video_trimmer:
-     path: 
+     path: C:\Users\Sefen\flutter_video_trimmer
 
 dev_dependencies:
   flutter_test:
