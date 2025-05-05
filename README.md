@@ -4,16 +4,12 @@ A Flutter package for trimming videos with customizable features and intuitive c
 ## 🎥 Demo
 Check out the video trimming in action!
 
-![Video Trimmer Demo]
-
-
-
-
-![Video Trimmer UI] 
-
-
-https://github.com/user-attachments/assets/f642990c-340c-455b-bde8-5323e25c78a4
-
+<table>
+  <tr>
+    <td><img src="https://github.com/fadyZaherEng/FlutterTrimmerPackage/raw/master/assets/trimmer_gif.gif" alt="Trimmer Gif" width="400"></td>
+    <td><img src="https://github.com/fadyZaherEng/FlutterTrimmerPackage/raw/master/assets/video.mp4" alt="Trimmer Video" width="400"></td>
+  </tr>
+</table>
 
 ✨ Features
 Customizable Video Trimmer: Tailor the trimming interface to your needs.
@@ -30,7 +26,7 @@ Video File Management: Load and save video files seamlessly.
 Add the following dependency to your pubspec.yaml:
 
 dependencies:
-flutter_video_trimmer_ios_android: ^3.0.8
+flutter_video_trimmer_ios_android: ^4.0.2
 
 ## 🛠️ Configuration
 
@@ -54,22 +50,18 @@ camera and storage access:
 For iOS, add the following keys to your Info.plist to request the required permissions for camera,
 microphone, and photo library access:
 
-<details> <summary><strong>▶️ Show iOS Configuration</strong></summary>
+<details>
+<summary><strong>▶️ Show iOS Configuration</strong></summary>
+
+```info.plist
 <key>NSCameraUsageDescription</key>
 <string>Used to demonstrate image picker plugin</string>
-
-
 <key>NSMicrophoneUsageDescription</key>
 <string>Used to capture audio for image picker plugin</string>
-
-
 <key>NSPhotoLibraryUsageDescription</key>
 <string>Used to demonstrate image picker plugin</string>
+```
 </details>
-
-iOS Configuration
-For iOS, add the following keys in your Info.plist to request the required permissions for camera,
-microphone, and photo library access:
 
 📌 Example: README Section
 
@@ -466,3 +458,19 @@ image_picker packages to your pubspec.yaml file.
 You can try out this example by replacing the entire content of main.dart file of a newly created
 Flutter project.
 
+
+📝 License
+MIT License
+
+Copyright (c) 2025 [Fady Zaher]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
