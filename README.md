@@ -6,7 +6,11 @@ Check out the video trimming in action!
 
 ![Video Trimmer Demo](assets/trimmer_gif.gif)
 
-![Video Trimmer UI] (https://github.com/user-attachments/assets/f8f36d38-c54c-4b50-ad6c-5b91c120180c)
+![Video Trimmer UI] 
+
+
+https://github.com/user-attachments/assets/f642990c-340c-455b-bde8-5323e25c78a4
+
 
 ✨ Features
 Customizable Video Trimmer: Tailor the trimming interface to your needs.
