@@ -1,10 +1,10 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_video_trimmer_ios_android/config/theme/color_schemes.dart';
-import 'package:flutter_video_trimmer_ios_android/core/utils/durations.dart';
-import 'package:flutter_video_trimmer_ios_android/flutter_video_trimmer.dart';
-import 'package:flutter_video_trimmer_ios_android/presentation/widgets/trimmer_widget.dart';
-import 'package:flutter_video_trimmer_ios_android/presentation/widgets/video_widget.dart';
+import 'package:fz_trimmer/config/theme/color_schemes.dart';
+import 'package:fz_trimmer/core/utils/durations.dart';
+import 'package:fz_trimmer/flutter_video_trimmer.dart';
+import 'package:fz_trimmer/presentation/widgets/trimmer_widget.dart';
+import 'package:fz_trimmer/presentation/widgets/video_widget.dart';
 
 class VideoTrimmerScreen extends StatefulWidget {
   final File file;

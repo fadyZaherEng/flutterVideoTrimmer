@@ -13,8 +13,10 @@ dependencies:
   video_player:
   image_picker:
   video_thumbnail: ^0.5.3
-  flutter_video_trimmer_ios_android:
-     path: C:\Users\Sefen\flutter_video_trimmer
+  fz_trimmer:
+    path: C:\Users\Sefen\flutter_video_trimmer
+
+
 
 dev_dependencies:
   flutter_test:

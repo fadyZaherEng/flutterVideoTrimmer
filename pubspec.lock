@@ -163,18 +163,18 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_video_trimmer_ios_android:
-    dependency: "direct main"
-    description:
-      path: "C:\\Users\\Sefen\\flutter_video_trimmer"
-      relative: false
-    source: path
-    version: "4.0.2"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
+  fz_trimmer:
+    dependency: "direct main"
+    description:
+      path: "C:\\Users\\Sefen\\flutter_video_trimmer"
+      relative: false
+    source: path
+    version: "0.0.1"
   html:
     dependency: transitive
     description:
