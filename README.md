@@ -18,7 +18,7 @@ A Flutter package for trimming videos with customizable features and intuitive c
 |:-----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------:| 
 
 ## GIF DEMO
- ![GIF DEMO](https://raw.githubusercontent.com/fadyZaherEng/flutter_video_trimmer/master/assets/trimmer_gif.gif) | 
+ ![GIF DEMO](https://raw.githubusercontent.com/fadyZaherEng/flutter_video_trimmer/master/assets/demo.gif) | 
  |:---------------------------------------------------------------------------------------------------------------:| 
 
 ---
@@ -318,7 +318,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         InkWell(
-           child: Icon(
+          child: Icon(
             videoPlayerController!.value.isPlaying
                 ? Icons.pause
                 : Icons.play_arrow,

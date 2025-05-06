@@ -2,8 +2,8 @@
 A Flutter package for trimming videos with customizable features and intuitive controls.
 
 ## 📖 Table of Contents
-- [ScreenshotsAndDemo](#screenshotsAndDemo)
-- [Features](#features)
+- [Screenshots](#Screenshots)
+- [Features](#Features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
     - [Trimmer](#trimmer)
@@ -12,21 +12,18 @@ A Flutter package for trimming videos with customizable features and intuitive c
 - [About the Developer](#about-the-developer)
 - [License](#license)
 
-## Screenshots
-| ![screen1](https://raw.githubusercontent.com/fadyZaherEng/FlutterTrimmerPackage/main/assets/screen1.jpg) | ![screen2](https://raw.githubusercontent.com/fadyZaherEng/FlutterTrimmerPackage/main/assets/screen2.jpg) | ![trimmer_gif](https://raw.githubusercontent.com/fadyZaherEng/FlutterTrimmerPackage/main/assets/trimmer_gif.gif) |
-|:--------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
+## 🎥 Check out the video trimming in action!
+## Screens
+| ![Screen 1](https://raw.githubusercontent.com/fadyZaherEng/flutter_video_trimmer/master/assets/1.jpg) | ![Screen 2](https://raw.githubusercontent.com/fadyZaherEng/flutter_video_trimmer/master/assets/2.jpg) |  
+|:-----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------:| 
+
+## GIF DEMO
+ ![GIF DEMO](https://raw.githubusercontent.com/fadyZaherEng/flutter_video_trimmer/master/assets/trimmer_gif.gif) | 
+ |:---------------------------------------------------------------------------------------------------------------:| 
 
 ---
-## 🎥 Demo
-Check out the video trimming in action!
 
-<table>
-  <tr>
-     <td><img src="https://raw.githubusercontent.com/fadyZaherEng/FlutterTrimmerPackage/main/assets/video.mp4" alt="Trimmer Video" width="400"></td>
-  </tr>
-</table>
-
-✨ Features
+## Features
 
 - 🚀 Customizable Video Trimmer: Tailor the trimming interface to your needs.
 - 🚀 Two Trim Viewer Modes: Choose between fixed length and scrollable viewers.
@@ -40,7 +37,7 @@ Check out the video trimming in action!
    In your `pubspec.yaml`:
 ```yaml
 dependencies:
-  flutter_video_trimmer_ios_android: ^4.0.2
+  flutter_video_trimmer_ios_android: ^4.0.4
 ```
 
 2. `Install Package` In your project:
@@ -104,15 +101,16 @@ post_install do |installer|
 end
 ```
 
-## 📦 Example: Using `flutter_video_trimmer_ios_android`
+##  Usage
 
 Here’s a complete example showing how to build a custom video trimming screen using
 the `flutter_video_trimmer` package.
 
-## Usage flutter_video_trimmer_ios_android
+## usage flutter_video_trimmer_ios_android
 ```dart
  VideoWidget(flutterVideoTrimmer: _flutterVideoTrimmer),
 ```
+## Trimmer
 ```dart
 TrimmerWidget(
   trimmer: flutterVideoTrimmer,
@@ -130,7 +128,7 @@ TrimmerWidget(
 setState(() => _isPlaying = value), 
 ),
 ```
-## Example flutter_video_trimmer_ios_android
+## Example
 
 ```dart
 import 'dart:io';
@@ -155,7 +153,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+```
+```dart
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -348,7 +347,8 @@ class _HomeScreenState extends State<HomeScreen> {
         : const SizedBox.shrink();
   }
 }
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+``` 
+```dart
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_video_trimmer/config/theme/color_schemes.dart';
@@ -508,10 +508,10 @@ class _VideoTrimmerScreenState extends State<VideoTrimmerScreen> {
   }
 }
 ```
-## Example
+## Example_Full_Code
 [You Can Find The Full Code Here](https://github.com/fadyZaherEng/flutterVideoTrimmer)
-
-## Dependencies Used This package uses (You do not have to import them):
+## Dependencies Used
+## This package uses (You do not have to import them):
     flutter_native_video_trimmer: 
     transparent_image: 
     image: 
