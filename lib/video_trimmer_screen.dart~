@@ -75,7 +75,7 @@ class _VideoTrimmerScreenState extends State<VideoTrimmerScreen> {
         child: Column(
           children: [
             const SizedBox(height: 16),
-            Expanded(child: VideoWidget(trimmer: _trimmer)),
+            Expanded(child: VideoWidget(flutterVideoTrimmer: _trimmer)),
             const SizedBox(
               height: 10,
             ),

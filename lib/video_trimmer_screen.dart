@@ -174,5 +174,6 @@ class _VideoTrimmerScreenState extends State<VideoTrimmerScreen> {
         ],
       ),
     );
+
   }
 }
