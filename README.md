@@ -37,7 +37,7 @@ A Flutter package for trimming videos with customizable features and intuitive c
    In your `pubspec.yaml`:
 ```yaml
 dependencies:
-  fz_trimmer: ^0.0.5
+  fz_trimmer: ^0.0.6
 ```
 
 2. `Install Package` In your project:
@@ -288,9 +288,7 @@ class _VideoTrimmerScreenState extends State<VideoTrimmerScreen> {
     );
   }
 }
-```
-## Example_Full_Code
-[You Can Find The Full Code Here](https://github.com/fadyZaherEng/flutterVideoTrimmer)
+``` 
 ## Dependencies Used
 ## This package uses (You do not have to import them):
     flutter_native_video_trimmer:
