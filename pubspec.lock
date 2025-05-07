@@ -174,7 +174,7 @@ packages:
       path: "C:\\Users\\Sefen\\flutter_video_trimmer"
       relative: false
     source: path
-    version: "0.0.1"
+    version: "0.0.4"
   html:
     dependency: transitive
     description:
