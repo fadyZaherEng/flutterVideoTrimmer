@@ -32,7 +32,6 @@ A Flutter package for trimming videos with customizable features and intuitive c
 
 ---
 ## Getting Started
-
 1. **Add dependency:**
    In your `pubspec.yaml`:
 ```yaml
